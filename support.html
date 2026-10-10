@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Diary — Support</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1d1d1f;
+            --muted: #6e6e73;
+            --border: #d2d2d7;
+            --accent: #0071e3;
+            --card-bg: #f5f5f7;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1d1d1f;
+                --text: #f5f5f7;
+                --muted: #a1a1a6;
+                --border: #424245;
+                --accent: #2997ff;
+                --card-bg: #2d2d2f;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.2rem; font-weight: 600; margin: 1.8rem 0 0.6rem; }
+        p, li { font-size: 0.95rem; color: var(--text); margin-bottom: 0.5rem; }
+        ul { padding-left: 1.2rem; }
+        .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+        .lang-switch {
+            display: flex; gap: 0.5rem; margin-bottom: 2rem; flex-wrap: wrap;
+        }
+        .lang-switch button {
+            padding: 0.4rem 1rem; border: 1px solid var(--border); border-radius: 20px;
+            background: var(--card-bg); color: var(--text); cursor: pointer;
+            font-size: 0.85rem; transition: all 0.2s;
+        }
+        .lang-switch button.active,
+        .lang-switch button:hover {
+            background: var(--accent); color: #fff; border-color: var(--accent);
+        }
+        .lang { display: none; }
+        .lang.active { display: block; }
+        .contact-box {
+            margin-top: 2rem; padding: 1rem; background: var(--card-bg);
+            border-radius: 12px; border: 1px solid var(--border);
+        }
+        .contact-box a { color: var(--accent); text-decoration: none; }
+        footer { margin-top: 3rem; text-align: center; color: var(--muted); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<div class="lang-switch">
+    <button onclick="switchLang('zh')" id="btn-zh" class="active">繁體中文</button>
+    <button onclick="switchLang('en')" id="btn-en">English</button>
+    <button onclick="switchLang('ja')" id="btn-ja">日本語</button>
+</div>
+
+<!-- 繁體中文 -->
+<div id="lang-zh" class="lang active">
+    <h1>支援</h1>
+    <p class="subtitle">Wealth Diary — 個人記帳與投資記錄 App</p>
+
+    <p>Wealth Diary 讓您在一個地方管理日常收支、信用卡、貸款、股票與期權期貨。使用上有任何問題或建議，歡迎與我們聯絡。</p>
+
+    <div class="contact-box">
+        <h2>聯絡我們</h2>
+        <p>電子郵件： <a href="mailto:xionhsu@gmail.com">xionhsu@gmail.com</a></p>
+    </div>
+
+    <h2>免費版與完整版有什麼差別？</h2>
+    <p>免費版可記錄 100 筆交易；完整版為一次買斷，可無限筆數記錄，同一 Apple ID 的所有裝置皆可使用。</p>
+
+    <h2>換了新手機，如何恢復完整版？</h2>
+    <p>請使用購買時的 Apple ID 登入，前往「設定」>「完整版」，點選「恢復購買」。</p>
+
+    <h2>資料如何在多台裝置間同步？</h2>
+    <p>資料透過您個人的 iCloud 同步。請確認各裝置登入相同 Apple ID，並在系統設定中為 Wealth Diary 開啟 iCloud。</p>
+
+    <h2>為什麼看不到語音或拍照記帳按鈕？</h2>
+    <p>AI 快速輸入使用 Apple Intelligence，需要支援的裝置（如 iPhone 15 Pro 以後機型），並於系統設定中開啟 Apple Intelligence。</p>
+
+    <h2>如何使用 Siri 記帳？</h2>
+    <p>App 內建 Siri 捷徑，可直接對 Siri 說話，或在「捷徑」App 中找到 Wealth Diary 的動作。</p>
+
+    <h2>如何刪除我的資料？</h2>
+    <p>刪除 App 即會移除裝置上的資料；iCloud 中的資料可於「設定」>「Apple ID」>「iCloud」>「管理儲存空間」刪除。</p>
+
+    <p style="margin-top:2rem"><a href="privacy.html">隱私權政策</a></p>
+</div>
+
+<!-- English -->
+<div id="lang-en" class="lang">
+    <h1>Support</h1>
+    <p class="subtitle">Wealth Diary — Personal finance & investment journal</p>
+
+    <p>Wealth Diary helps you track daily spending, credit cards, loans, stocks, options and futures in one place. If you have any questions or suggestions, please contact us.</p>
+
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:xionhsu@gmail.com">xionhsu@gmail.com</a></p>
+    </div>
+
+    <h2>What is the difference between the free and full version?</h2>
+    <p>The free version allows up to 100 records. The Full Version is a one-time purchase with unlimited records on all devices signed in with the same Apple ID.</p>
+
+    <h2>How do I restore the Full Version on a new device?</h2>
+    <p>Sign in with the Apple ID used for the purchase, go to Settings > Full Version and tap "Restore Purchases".</p>
+
+    <h2>How does sync work across devices?</h2>
+    <p>Data syncs through your own iCloud. Make sure all devices use the same Apple ID and iCloud is enabled for Wealth Diary.</p>
+
+    <h2>Why don't I see the voice or camera input buttons?</h2>
+    <p>AI quick input uses Apple Intelligence, which requires a supported device (e.g. iPhone 15 Pro or later) with Apple Intelligence turned on.</p>
+
+    <h2>How do I use Siri?</h2>
+    <p>The app provides Siri shortcuts. Talk to Siri directly, or find Wealth Diary actions in the Shortcuts app.</p>
+
+    <h2>How do I delete my data?</h2>
+    <p>Deleting the app removes data on the device. iCloud data can be deleted in Settings > Apple ID > iCloud > Manage Storage.</p>
+
+    <p style="margin-top:2rem"><a href="privacy.html">Privacy Policy</a></p>
+</div>
+
+<!-- 日本語 -->
+<div id="lang-ja" class="lang">
+    <h1>サポート</h1>
+    <p class="subtitle">Wealth Diary — 家計簿・投資記録アプリ</p>
+
+    <p>Wealth Diary は、日々の収支、クレジットカード、ローン、株式、オプション・先物をひとつにまとめて管理できるアプリです。ご質問やご要望はお気軽にお問い合わせください。</p>
+
+    <div class="contact-box">
+        <h2>お問い合わせ</h2>
+        <p>メール： <a href="mailto:xionhsu@gmail.com">xionhsu@gmail.com</a></p>
+    </div>
+
+    <h2>無料版とフルバージョンの違いは？</h2>
+    <p>無料版は最大 100 件まで記録できます。フルバージョンは買い切りで記録数無制限、同じ Apple ID のすべてのデバイスで利用できます。</p>
+
+    <h2>新しいデバイスでフルバージョンを復元するには？</h2>
+    <p>購入時の Apple ID でサインインし、「設定」>「フルバージョン」で「購入を復元」をタップしてください。</p>
+
+    <h2>デバイス間の同期は？</h2>
+    <p>ご自身の iCloud で同期されます。各デバイスで同じ Apple ID を使用し、Wealth Diary の iCloud を有効にしてください。</p>
+
+    <h2>音声入力・撮影ボタンが表示されないのはなぜ？</h2>
+    <p>AI 入力には Apple Intelligence 対応デバイス（iPhone 15 Pro 以降など）と、Apple Intelligence の有効化が必要です。</p>
+
+    <h2>Siri で記帳するには？</h2>
+    <p>Siri に直接話しかけるか、ショートカット App で Wealth Diary のアクションを使用してください。</p>
+
+    <h2>データを削除するには？</h2>
+    <p>アプリを削除するとデバイス上のデータが削除されます。iCloud のデータは「設定」>「Apple ID」>「iCloud」>「ストレージを管理」から削除できます。</p>
+
+    <p style="margin-top:2rem"><a href="privacy.html">プライバシーポリシー</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2026 HaoPhi. All rights reserved.</p>
+</footer>
+
+<script>
+    function switchLang(lang) {
+        document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.lang-switch button').forEach(el => el.classList.remove('active'));
+        document.getElementById('lang-' + lang).classList.add('active');
+        document.getElementById('btn-' + lang).classList.add('active');
+        const htmlLang = { zh: 'zh-Hant', en: 'en', ja: 'ja' };
+        document.documentElement.lang = htmlLang[lang];
+    }
+    // 自動偵測瀏覽器語言
+    (function() {
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('ja')) switchLang('ja');
+        else if (userLang.startsWith('en')) switchLang('en');
+    })();
+</script>
+</body>
+</html>
